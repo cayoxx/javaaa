@@ -2,7 +2,7 @@ package arrumarcoisa;
 import java.util.Scanner;
 public class Ints {
 	
-	Scanner ler = new Scanner(System.in);
+	static Scanner ler = new Scanner(System.in);
 
 	public static void main(String[] args) {
 	int matriz1[] = new int[2];
@@ -12,14 +12,11 @@ public class Ints {
 	for(int i=0; i<2; i++) { //Matriz 1
 		System.out.println("Informe o " + i + "° valor da matriz 1:");
 		matriz1[i] = ler.nextInt();
-	}
-	for(int i=0; i<2; i++) { //Matriz 2
 		System.out.println("Informe o " + i + "° valor da matriz 2:");
 		matriz2[i] = ler.nextInt();
-	}
-	for(int i=0; i<2; i++) { //Matriz 3
 		matriz3[i] = matriz1[i];
 		matriz3[i+2] = matriz2 [i];
+
 	}
 	for(int i=0; i<4; i++) {
 		System.out.println(i + "° valor da matriz 3: " + matriz3[i]);
